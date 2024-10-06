@@ -1,0 +1,17 @@
+/* styles.css */
+body {
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide overflow to avoid scroll bars */
+    padding: 25px;
+}
+
+img {
+    display: block; /* Remove inline spacing */
+    position: absolute; /* Position image absolutely */
+    top: 0; /* Align image to the top */
+    left: 0; /* Align image to the left */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Cover the area without distortion */
+    color: #5C6AC4;
+}

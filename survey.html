@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Syracuse University Health Survey
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: #D3D3D3;
+            font-family: Verdana;
+            text-align: left;
+        }
+        
+        .round-box {
+            width: 400px;
+            height: 60px;
+            background-color: #05c46b;
+            border-radius: 20px; /* Adjust this value for more or less rounding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .round-box h1 {
+            margin: 0; /* Removes the default margin */
+            padding: 0; /* Optional: remove padding if present */
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // Variable to store the selected response
+        let nose = 0.0;
+        let throat = 0.0;
+        let cough = 0.0;
+        let sneeze = 0.0;
+        let heachache = 0.0;
+        let fever = 0.0;
+        let nausea = 0.0;
+        let chest = 0.0;
+        let unwell = 0.0;
+    
+        // Get all radio buttons by name
+        const noseRadios = document.querySelectorAll('input[name="nose"]');
+        const throatRadios = document.querySelectorAll('input[name="throat"]');
+    
+        // Add event listener to track the selected radio button
+        noseRadios.forEach(radio => {
+          radio.addEventListener('change', (event) => {
+            nose = event.target.value; // Store selected value
+            console.log("Selected nose response: ", nose);
+          });
+        });
+      
+      </script>
+    
+    
+    
+    <!-- Create Form -->
+    <form id="form">
+        <!-- Details -->
+        <div class="round-box" style="margin-bottom: 20px;">
+            <h1 style="color: #FFFFFF;">Health Feedback</h1>
+        </div>
+        
+        <div class="form-control">
+            <label>
+                Which of the following symptoms are you experiencing today?<br>
+              <small>(1-5 from least to most severe)</small>
+            </label>
+            
+            <label>
+                Runny or stuffy nose:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="nose-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nose-1" 
+                       name="nose" value="1">1
+                  </input>
+            </label>
+            <label for="nose-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nose-2" 
+                       name="nose" value="2">2
+                  </input>
+            </label>
+            <label for="nose-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nose-3" 
+                       name="nose" value="3">3
+                  </input>
+            </label>
+            </label>
+            <label for="nose-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nose-4" 
+                       name="nose" value="4">4
+                  </input>
+            </label>
+            <label for="nose-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nose-5" 
+                       name="nose" value="5">5
+                  </input>
+            </label>
+            
+            <label>
+                Sore or scratchy throat:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="throat-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="throat-1" 
+                       name="throat" value=1>1
+                  </input>
+            </label>
+            <label for="throat-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="throat-2" 
+                       name="throat" value=2>2
+                  </input>
+            </label>
+            <label for="throat-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="throat-3" 
+                       name="throat" value=3>3
+                  </input>
+            </label>
+            </label>
+            <label for="throat-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="throat-4" 
+                       name="throat" value=4>4
+                  </input>
+            </label>
+            <label for="throat-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="throat-5" 
+                       name="throat" value=5>5
+                  </input>
+            </label>
+            
+            <label>
+                Cough:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="cough-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="cough-1" 
+                       name="cough">1
+                  </input>
+            </label>
+            <label for="cough-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="cough-2" 
+                       name="cough">2
+                  </input>
+            </label>
+            <label for="cough-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="cough-3" 
+                       name="cough">3
+                  </input>
+            </label>
+            </label>
+            <label for="cough-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="cough-4" 
+                       name="cough">4
+                  </input>
+            </label>
+            <label for="cough-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="cough-5" 
+                       name="cough">5
+                  </input>
+            </label>
+            
+            <label>
+                Sneezing:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="sneeze-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="sneeze-1" 
+                       name="sneeze">1
+                  </input>
+            </label>
+            <label for="sneeze-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="sneeze-2" 
+                       name="sneeze">2
+                  </input>
+            </label>
+            <label for="sneeze-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="sneeze-3" 
+                       name="sneeze">3
+                  </input>
+            </label>
+            </label>
+            <label for="sneeze-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="sneeze-4" 
+                       name="sneeze">4
+                  </input>
+            </label>
+            <label for="sneeze-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="sneeze-5" 
+                       name="sneeze">5
+                  </input>
+            </label>
+            
+            <label>
+                Heachache:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="heachache-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="heachache-1" 
+                       name="heachache">1
+                  </input>
+            </label>
+            <label for="heachache-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="heachache-2" 
+                       name="heachache">2
+                  </input>
+            </label>
+            <label for="heachache-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="heachache-3" 
+                       name="heachache">3
+                  </input>
+            </label>
+            </label>
+            <label for="heachache-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="heachache-4" 
+                       name="heachache">4
+                  </input>
+            </label>
+            <label for="heachache-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="heachache-5" 
+                       name="heachache">5
+                  </input>
+            </label>
+            
+            <label>
+                Fever:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="fever-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="fever-1" 
+                       name="fever">1
+                  </input>
+            </label>
+            <label for="fever-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="fever-2" 
+                       name="fever">2
+                  </input>
+            </label>
+            <label for="fever-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="fever-3" 
+                       name="fever">3
+                  </input>
+            </label>
+            </label>
+            <label for="fever-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="fever-4" 
+                       name="fever">4
+                  </input>
+            </label>
+            <label for="fever-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="fever-5" 
+                       name="fever">5
+                  </input>
+            </label>
+            
+            <label>
+                Nausea or vomiting:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="nausea-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nausea-1" 
+                       name="nausea">1
+                  </input>
+            </label>
+            <label for="nausea-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nausea-2" 
+                       name="nausea">2
+                  </input>
+            </label>
+            <label for="nausea-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nausea-3" 
+                       name="nausea">3
+                  </input>
+            </label>
+            </label>
+            <label for="nausea-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nausea-4" 
+                       name="nausea">4
+                  </input>
+            </label>
+            <label for="nausea-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="nausea-5" 
+                       name="nausea">5
+                  </input>
+            </label>
+            
+            <label>
+                Chest pain or pressure:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="chest-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="chest-1" 
+                       name="chest">1
+                  </input>
+            </label>
+            <label for="chest-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="chest-2" 
+                       name="chest">2
+                  </input>
+            </label>
+            <label for="chest-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="chest-3" 
+                       name="chest">3
+                  </input>
+            </label>
+            </label>
+            <label for="chest-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="chest-4" 
+                       name="chest">4
+                  </input>
+            </label>
+            <label for="chest-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="chest-5" 
+                       name="chest">5
+                  </input>
+            </label>
+            
+            <label>
+                Generally feeling unwell:
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="unwell-1" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="unwell-1" 
+                       name="unwell">1
+                  </input>
+            </label>
+            <label for="unwell-2" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="unwell-2" 
+                       name="unwell">2
+                  </input>
+            </label>
+            <label for="unwell-3" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="unwell-3" 
+                       name="unwell">3
+                  </input>
+            </label>
+            </label>
+            <label for="unwell-4" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="unwell-4" 
+                       name="unwell">4
+                  </input>
+            </label>
+            <label for="unwell-5" style="display: inline-block; margin-right: 30px;">
+                <input type="radio" id="unwell-5" 
+                       name="unwell">5
+                  </input>
+            </label>
+            <label for="comment">
+              Other:
+            </label>
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"placeholder="Enter your symptoms here"></textarea>
+        </div>
+
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>

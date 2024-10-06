@@ -1,0 +1,157 @@
+/* App.css */
+
+body {
+  background-color: #c4c4c4; /* Light blue background color */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font for the page */
+}
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.title-box {
+  background-color: #000E54; 
+  color: white; /* White text color */
+  padding: 0px 10px; 
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+  margin-bottom: 10px; /* Space below the title container */
+  width: fit-content; /* Set width to fit the content */
+  max-width: 90%; /* Optional: prevent it from getting too wide */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+}
+/* Style for the map container */
+.leaflet-container {
+  border-radius: 8px; /* Rounded corners for the map */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add some shadow */
+}
+
+/* Style for the title */
+h1 {
+  margin: 20px 0;
+  color: #F76900; /* Dark blue color for the title */
+
+}
+
+/* Style for the custom button */
+.custom-button {
+  background-color: #2980b9; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding around the text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  font-size: 16px; /* Font size */
+}
+
+/* Button hover effect */
+.custom-button:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}
+
+/* Style for the form inside the popup */
+form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  margin: 10px 0; /* Margin around the form */
+}
+
+/* Style for the textarea */
+textarea {
+  margin: 10px 0; /* Margin above and below */
+  padding: 8px; /* Inner padding */
+  border: 1px solid #bdc3c7; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  resize: none; /* Disable resizing */
+  font-size: 14px; /* Font size */
+}
+
+/* Style for submit button in the form */
+form button[type="submit"] {
+  background-color: #27ae60; /* Green button */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Submit button hover effect */
+form button[type="submit"]:hover {
+  background-color: #2ecc71; /* Lighter green on hover */
+}
+
+/* Style for the building details section */
+.building-details {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #bdc3c7; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ecf0f1; /* Light background color */
+}
+
+/* List styling for the reports */
+.building-details ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+/* Style for individual report items */
+.building-details li {
+  margin: 5px 0; /* Margin above and below */
+  padding: 5px;
+  background-color: #ffffff; /* White background for list items */
+  border: 1px solid #bdc3c7; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+}
+/* Submit button */
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Styles for presence buttons */
+.presence-question p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.presence-button {
+  width: 100px; /* Adjust width as necessary */
+  height: 40px; /* Adjust height as necessary */
+  font-size: 16px; /* Font size */
+  margin: 5px; /* Space between buttons */
+  cursor: pointer; /* Change cursor on hover */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.presence-button.selected {
+  background-color: #0056b3; /* Different color when selected */
+}
+
+.presence-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Submit button */
+.submit-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
